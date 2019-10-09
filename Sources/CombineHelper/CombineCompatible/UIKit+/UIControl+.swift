@@ -10,7 +10,7 @@ import Combine
 import UIKit
 
 extension CombineCompatible where Self: UIControl {
-    func publisher(for event: UIControl.Event) -> UIControlPublisher<Self> {
+   public func publisher(for event: UIControl.Event) -> UIControlPublisher<Self> {
         return UIControlPublisher(control: self, event: event)
     }
 }

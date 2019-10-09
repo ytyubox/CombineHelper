@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol CombineCompatible { }
+public protocol CombineCompatible { }
