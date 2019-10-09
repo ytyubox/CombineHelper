@@ -6,5 +6,5 @@
 //
 
 import Combine
-@available(iOS 13.0, *)
-typealias GenericCurrentValueSubject<Output> = CurrentValueSubject<Output, Error>
+
+public typealias GenericCurrentValueSubject<Output> = CurrentValueSubject<Output, Error>
