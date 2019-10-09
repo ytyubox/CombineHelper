@@ -8,7 +8,7 @@
 #if !os(macOS)
 import UIKit
 
-public extension UIView: CombineCompatible{
-    
+public extension UIView: CombineCompatible {
+
 }
 #endif

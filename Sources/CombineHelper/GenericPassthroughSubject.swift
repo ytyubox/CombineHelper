@@ -1,3 +1,3 @@
 import Combine
 
-public typealias GenericPassthroughSubject<OutPut> = PassthroughSubject<OutPut,Error>
+public typealias GenericPassthroughSubject<OutPut> = PassthroughSubject<OutPut, Error>
