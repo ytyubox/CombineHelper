@@ -9,7 +9,7 @@ import Combine
 #if !os(macOS)
 import UIKit
 
-public extension CombineCompatible where Self: UIControl {
+extension CombineCompatible where Self: UIControl {
     func publisher(for event: UIControl.Event) -> UIControlPublisher<Self> {
         return UIControlPublisher(control: self, event: event)
     }
@@ -21,7 +21,7 @@ struct UIControlPublisher<Control: UIControl>: Publisher {
     typealias Failure = Never
 
     let control: Control
-    let controlEvents: UIControl.Event
+    let controlEvent: UIControl.Event
 
     init(control: Control, event: UIControl.Event) {
         self.control = control
